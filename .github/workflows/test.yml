@@ -3,6 +3,9 @@ on:
   push:
     branches:
       - chatgpt-sdp-recalc-20260818
+  pull_request:
+    branches:
+      - main
 jobs:
   recalc:
     runs-on: ubuntu-latest

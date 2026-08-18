@@ -21,7 +21,7 @@ OUT=Path(os.environ.get('DQKD_OUT','.')); OUT.mkdir(parents=True,exist_ok=True)
 N=1e12; M=8; PM=np.full(M,1/M); AF=0.2; ETADET=0.85; PD=1e-8; FEC=1.16
 INT=(0.6,0.1,0.001); PMU=np.array([0.8,0.15,0.05]); PIN=0.5
 EPSSEC=1e-8; EPSCOM=1e-10; K=M*len(INT)*2*3; TAU=2e-5; NPH=6
-GAM=np.logspace(-4,np.log10(0.5),32)
+GAM=np.logspace(-4,np.log10(0.5),48)
 KGRID=(1e-4,3e-4,1e-3,3e-3,6e-3,1e-2,2e-2)
 FW=30
 E0=np.array([.004,.006,.008,.010,.014,.018,.024,.030])
